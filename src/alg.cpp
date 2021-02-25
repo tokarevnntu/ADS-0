@@ -1,11 +1,12 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-    int c;
-   while (b) {
-      c = a % b;
-      a = b;
-      b = c;        
-  }
-  return abs(a);
+    // поместить сюда текст реализации алгоритма (на С++)
+int t;
+while (b != 0) {
+t = b;
+b = a % b;
+a = t;
+}
+return a;
 }
